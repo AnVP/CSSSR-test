@@ -1,0 +1,44 @@
+.input-checkbox__label
+	font-checkbox()
+
+	position relative
+
+	display block
+
+	padding-left 28px
+	margin-bottom 10px
+
+	&::before
+		content ''
+		position absolute
+		top 2px
+		left 0
+
+		width 20px
+		height 20px
+
+		background-image url('../images/checkbox-off.png')
+		background-repeat no-repeat
+		background-position center
+
+	&::after
+		content ''
+		position absolute
+		top -2px
+		left 4px
+
+		display none
+		width 20px
+		height 20px
+
+		background-image url('../images/checkbox-on.png')
+		background-repeat no-repeat
+		background-position center
+
+.input-checkbox__input:checked + .input-checkbox__label::after
+	display block
+
+.input-checkbox__label:hover,
+.input-checkbox__label:focus,
+.input-checkbox__label:active
+	opacity 0.5

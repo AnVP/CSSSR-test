@@ -1,0 +1,6 @@
+mixin input-checkbox(id, name, checked, title)
+	li.input-checkbox
+		input(type="checkbox", id=id, name=name, checked=checked, tabindex="-1").visually-hidden.input-checkbox__input
+		label(for=id, tabindex="0").input-checkbox__label= title
+			if block
+				block

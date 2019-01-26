@@ -1,0 +1,42 @@
+.input-radio__label
+	font-checkbox()
+	font-size 20px
+
+	position relative
+
+	padding-left 30px
+
+	&::before
+		content ''
+		position absolute
+		top -9px
+		left -9px
+
+		width 41px
+		height 45px
+
+		background-image url('../images/radio-off.png')
+		background-repeat no-repeat
+		background-position center
+
+	&::after
+		content ''
+		position absolute
+		top 4px
+		left 0
+
+		display none
+		width 23px
+		height 27px
+
+		background-image url('../images/radio-on.png')
+		background-repeat no-repeat
+		background-position center
+
+.input-radio__input:checked + .input-radio__label::after
+	display block
+
+.input-radio__label:hover,
+.input-radio__label:focus,
+.input-radio__label:active
+	opacity 0.5

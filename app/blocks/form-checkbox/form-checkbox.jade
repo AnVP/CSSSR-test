@@ -1,0 +1,29 @@
+include ../input-checkbox/input-checkbox
+
+.form-page__checkbox-wrapper.form-checkbox
+
+	ul.form-checkbox__list
+		+input-checkbox("bem", "bem", true, "БЭМ/OOCSS")
+		+input-checkbox("pug", "pug", true, "Pug (Jade)")
+		+input-checkbox("css", "css", true, "Stylus/LESS/SASS")
+		+input-checkbox("svg", "svg", true, "Работаю с SVG")
+		+input-checkbox("semantic", "semantic", true, "Верстаю семантично")
+		+input-checkbox("accessibility", "accessibility", true, "Accessibility (A11Y)")
+		+input-checkbox("es", "es", true, "ES2015/ES2016")
+
+	ul.form-checkbox__list
+		+input-checkbox("gulp", "gulp", true, "Gulp/GRUNT")
+		+input-checkbox("webpack", "webpack", false, "Webpack")
+		+input-checkbox("webgl", "webgl", false, "Дружу с WebGL")
+		+input-checkbox("jquery", "jquery", true, "jQuery")
+		+input-checkbox("angular", "angular", false, "Знаю/изучаю Angular")
+		+input-checkbox("react", "react", false, "Знаю/изучаю React")
+		+input-checkbox("node", "node", false, "Знаю/изучаю Node.js")
+
+	ul.form-checkbox__list
+		+input-checkbox("git", "git", true, "Использую Git")
+		+input-checkbox("ok", "ok", true, "С глазомером всё ок")
+		+input-checkbox("blog", "blog", true, "Читаю ")
+			a(href="http://blog.csssr.ru").form-checkbox_link blog.csssr.ru
+		+input-checkbox("lazy", "lazy", false, "Я ленивый(-ая)")
+		+input-checkbox("english", "english", false, "У меня хороший английский")
